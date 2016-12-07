@@ -13,13 +13,13 @@
 <body>
 	<div class="container">
 		<div id="login">
-			<form action="logSuccess.jsp" method="post" id="myform">
+			<form action="logRef.jsp" method="post" id="myform">
 				<h3>&nbsp;登录</h3>
 				<p class="p1">
 					<input class="text" name="username" type="text" placeholder="用户名" />
 				<p>
 				<p class="p1">
-					<input class="text" name="userpassword" type="text"
+					<input class="text" name="userpassword" type="password"
 						placeholder="密 &nbsp;&nbsp;码" />
 				<p>
 				<p>
