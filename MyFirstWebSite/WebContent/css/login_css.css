@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+body {
+	background-image: url("../images/bg.jpg");
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#login {
+	width: 320px;
+	height: 220px;
+	margin: 150px auto;
+	background-image: url("../images/form-bg.png");
+	border-radio:20px;
+}
+
+#myform {
+	display:inline-block;
+	width: 290px;
+	height: 190px;
+	margin: 15px auto auto;
+	background-color: #FFFFFF;
+	border-radio:20px;
+}
+
+#myform h3 {
+	text-align: left;
+	background-image: url("../images/bg_form.jpg");
+	line-height: 25px;
+}
+
+.text {
+	height: 20px;
+	width: 240px;
+}
+.p1{
+	line-height: 20px;
+}
