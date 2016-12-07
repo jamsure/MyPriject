@@ -14,13 +14,13 @@
 	<div class="container">
 		<div id="login">
 			<form action="logRef.jsp" method="post" id="myform">
-				<h3>&nbsp;登录</h3>
+				<h3>&nbsp;登录 </h3>
 				<p class="p1">
-					<input class="text" name="username" type="text" placeholder="用户名" />
+					<input class="text" name="username" type="text" placeholder="用户名-admin" />
 				<p>
 				<p class="p1">
 					<input class="text" name="userpassword" type="password"
-						placeholder="密 &nbsp;&nbsp;码" />
+						placeholder="密 &nbsp;&nbsp;码-123456" />
 				<p>
 				<p>
 					<input name="submit" type="submit" value="登  录">&nbsp;<input
