@@ -7,18 +7,37 @@
 <title>首页</title>
 <link rel="stylesheet" href="css/index_css.css">
 <style type="text/css">
-
-
+#body{
+background: none;
+}
+#navi{
+	height: 70px;
+	margin-top: 100px;
+	background-color: #FFFFFF;
+}
+#navi div{
+	background: url("images/logo.jpg") no-repeat ;
+}
 </style>
 </head>
 <body>
 	<div id="body">
 		<div id="navi">
-			<p>
-				<span class="text_right"><a href="web/login.jsp">登录</a>
-					&nbsp;<a href="web/application.html">注册</a></span>
-			</p>
-			<h1>欢迎光临我的网站</h1>
+		<div>
+		<p>
+		<span><a href="web/login.jsp">登录</a>&nbsp;<a href="web/application.html">注册</a></span>
+		</p>
+<p>
+	<ul>
+		<li>首页</li>
+		<li>博客</li>
+		<li>最新信息</li>
+		<li>留言</li>
+		<li>简介</li>
+		<li>简介</li>
+	</ul>
+</p>
+		</div>
 		</div>
 		<div id="container">
 				<p>这里还没有内容，等待添加</p>
