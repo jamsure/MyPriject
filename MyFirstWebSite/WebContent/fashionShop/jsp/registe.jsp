@@ -19,24 +19,25 @@ margin:0 auto 20px;;
 .contain td{
 	height: 38px;
 	line-height: 38px;
-	padding-right: 5px;
+	
 }
 .login_reg{
 border: 1px solid;
 margin-top: 10px;
 }
+
 .login{
 	padding:5px;
 	display: inline-block;
-	width: 469px;
-
-	border-right: 1px solid;
+	width: 468px;
 }
 
 .reg{
 	padding:5px;
 	display: inline-block;
 	width: 460px;
+	margin: 0px;
+	border-left:1px solid; 
 
 }
 .user_reg{
@@ -48,17 +49,14 @@ margin-top: 10px;
 }
 form{
 	margin-left:100px;
-	
 }
 .left{
 	text-align: right;
-	margin-right: 20px;
-	
 }
 .right{
 	width: 250px;
 }
-.login_form .find_pwd{
+.find_pwd{
 	color:red;
 	font-size: 10px;
 	text-align: right;
@@ -69,18 +67,24 @@ form{
 .center{
 	text-align: center;
 }
+.login_form{
+width: 360px;
+}
 </style>
 </head>
 <body>
-<%@ include file="NaviGation.jsp" %>
+<%-- <%@ include file="NaviGation.jsp" %> --%>
+<jsp:include page="NaviGation.jsp" />
 <div class="contain" >
 	<p>当前位置:首页>注册/登录</p>
 	<hr/>
-	<div class="login_reg">
-		<div class="login">
+		<div class="login_reg">
+	<table>
+		<tr>
+		<td><div class="login">
 		<p class="user_reg">用户登录：</p>
-		<form action="" method="post" name="login_form">
-		<table class="login_form">
+		<form action="/MyFirstWebSite/servlet/loginConfirm" method="post" name="login_form"  class="login_form">
+		<table>
 			<tr>
 				<td class="left">用户名</td><td class="right"><input type="text" name="username"><span id="username_span"></span></td>
 			</tr>
@@ -101,8 +105,8 @@ form{
 			</tr>
 		</table>
 		</form>
-		</div>
-		<div class="reg">
+		</div></td>
+		<td><div class="reg">
 		<p class="user_reg">用户注册：</p>
 		<form action="" method="post" name="reg_form">
 		<table>
@@ -126,10 +130,16 @@ form{
 			</tr>
 		</table>
 		</form>
-		</div>
+		</div></td>
+		</tr>
+	</table>
+
+		
+		
 	</div>
 </div>
 
-<%@ include file="Footer.jsp" %>
+<%-- <%@ include file="Footer.jsp" %> --%>
+<jsp:include page="Footer.jsp" />
 </body>
 </html>

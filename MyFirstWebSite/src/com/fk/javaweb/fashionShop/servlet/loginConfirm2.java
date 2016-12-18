@@ -12,13 +12,13 @@ import javax.servlet.http.HttpSession;
  * Servlet implementation class loginConfirm
  */
 @WebServlet("/servlet/loginConfirm")
-public class loginConfirm extends HttpServlet {
+public class loginConfirm2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public loginConfirm() {
+    public loginConfirm2() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,18 +30,15 @@ public class loginConfirm extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		response.setCharacterEncoding("utf-8");
 		String contextPath=request.getContextPath();
-		
 		String username=request.getParameter("username");
-		String userpwd=request.getParameter("userpassword");
-		
+		String userpwd=request.getParameter("userpwd");
 		HttpSession session=request.getSession();
 		if("admin".equals(username)&&"123456".equals(userpwd)){
 			session.setAttribute("username", username);
-			response.sendRedirect(contextPath+"/servlet/success.jsp");
-			session.setAttribute("username", username);
+			response.sendRedirect(contextPath+"/fashionShop/html/success.html");
 			
 		}else{
-			response.sendRedirect(contextPath+"/servlet/loginDemo.jsp");
+			response.sendRedirect(contextPath+"/fashionShop/html/failed.htmll");
 		}
 	}
 

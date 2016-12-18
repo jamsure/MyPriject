@@ -64,19 +64,19 @@ ul, li {
 
 .bookmark {
 	line-height: 20px;
-	background: url("../images/star1.png") no-repeat;
+	background: url("/MyFirstWebSite/fashionShop/images/star1.png") no-repeat;
 	padding-left: 15px;
 }
 
 .weibo {
 	line-height: 20px;
-	background: url("../images/weibo.png") no-repeat;
+	background: url("/MyFirstWebSite/fashionShop/images/weibo.png") no-repeat;
 	padding-left: 20px;
 }
 
 .mobile {
 	line-height: 20px;
-	background: url("../images/phone.png") no-repeat;
+	background: url("/MyFirstWebSite/fashionShop/images/phone.png") no-repeat;
 	padding-left: 15px;
 }
 
@@ -93,7 +93,7 @@ ul, li {
 	line-height: 50px;
 	margin-right: 40px;
 	padding-left: 20px;
-	background: url("../images/navi_1.png") no-repeat;
+	background: url("/MyFirstWebSite/fashionShop/images/navi_1.png") no-repeat;
 }
 
 .serach {
@@ -113,7 +113,7 @@ ul, li {
 
 .serach_button {
 	border-radius: 5px;
-	background: url("../images/black.png"); color : #FFFFFF;
+	background: url("/MyFirstWebSite/fashionShop/images/black.png"); color : #FFFFFF;
 	margin-right: 5px;
 	margin-top:3px;
 	color: #FFFFFF;
@@ -129,9 +129,9 @@ height: 3px;
 
 	<div id="navi_login">
 		<ul>
-			<li>登录</li>
-			<li>注册</li>
-			<li>我的账户</li>
+			<li><a href="/MyFirstWebSite/fashionShop/jsp/registe.jsp">登录</a></li>
+			<li><a href="/MyFirstWebSite/fashionShop/jsp/registe.jsp">注册</a></li>
+			<li><a href="/MyFirstWebSite/fashionShop/jsp/My_HomePage.jsp">我的账户</a></li>
 			<li>选购中心</li>
 			<li>标签云</li>
 			<li>报价单</li>
@@ -141,8 +141,8 @@ height: 3px;
 	</div>
 	<hr />
 	<div id="navi_logo">
-		<span class="checkin"><img alt="签到" src="../images/checkin.png"></span>
-		<span class="logo"><img alt="时尚起义" src="../images/logo.png"></span>
+		<span class="checkin"><img alt="签到" src="/MyFirstWebSite/fashionShop/images/checkin.png"></span>
+		<span class="logo"><img alt="时尚起义" src="/MyFirstWebSite/fashionShop/images/logo.png"></span>
 		<ul>
 			<li class="bookmark">BOOKMARK</li>
 			<li class="weibo">WEIBO</li>
