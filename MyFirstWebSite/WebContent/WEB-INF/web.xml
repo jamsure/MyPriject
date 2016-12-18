@@ -24,12 +24,9 @@
   </filter>
   <filter-mapping>
   	<filter-name>CheckLogin</filter-name>
-  	<url-pattern>/fashionShop/html</url-pattern>
-  </filter-mapping>
-  <filter-mapping>
-  	<filter-name>CheckLogin</filter-name>
   	<url-pattern>/fashionShop/jsp/My_HomePage.jsp</url-pattern>
   </filter-mapping>
+
   
   
   

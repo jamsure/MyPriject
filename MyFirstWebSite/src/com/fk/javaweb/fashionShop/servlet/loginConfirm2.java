@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class loginConfirm
  */
-@WebServlet("/servlet/loginConfirm")
+@WebServlet("/servlet/loginConfirm2")
 public class loginConfirm2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -83,13 +83,13 @@ width: 360px;
 		<tr>
 		<td><div class="login">
 		<p class="user_reg">用户登录：</p>
-		<form action="/MyFirstWebSite/servlet/loginConfirm" method="post" name="login_form"  class="login_form">
+		<form action="/MyFirstWebSite/servlet/loginConfirm2" method="post" name="login_form"  class="login_form">
 		<table>
 			<tr>
 				<td class="left">用户名</td><td class="right"><input type="text" name="username"><span id="username_span"></span></td>
 			</tr>
 			<tr>
-				<td class="left">密码</td><td class="right"><input type="text" name="userpwd"><span id="userpwd_span"></span></td>
+				<td class="left">密码</td><td class="right"><input type="password" name="userpwd"><span id="userpwd_span"></span></td>
 			</tr>
 			<tr>
 				<td class="left">验证码</td><td class="right"><input type="text"><span></span></td>
