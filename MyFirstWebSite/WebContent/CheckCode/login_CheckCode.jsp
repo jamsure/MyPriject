@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 	function reloadeCode() {
-		var date=new Date();
-		document.getElementById("imagecode").src="<%=request.getContextPath() %>/servlet/ImageServlet?id=date"
+		var date=new Date().getTime();
+		document.getElementById("imagecode").src = "<%= request.getContextPath() %>/servlet/ImageServlet?id="+date;
 	}
 </script>
 </head>
