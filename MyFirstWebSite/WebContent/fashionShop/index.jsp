@@ -15,8 +15,8 @@
 margin:0 auto 20px;;
 	width: 960px;
 }
-.navi_newshop{
-
+.navi_newshop table tr{
+	margin-bottom: 20px;
 }
 .img_new{
 margin-left: 20px;
@@ -68,6 +68,7 @@ line-height: 41px;
 .xinpin_{
 height:50px;
 background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
+background-repeat: repeat-x;
 }
 </style>
 </head>
@@ -170,7 +171,7 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 		<tr><td colspan="2"><ul class="tejia_shop">
 			<li>
 				<dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop1.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop6.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -178,7 +179,14 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 				</dl>
 			</li>
 			<li><dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop2.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop5.jpg"></dt>
+					<dd>
+					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
+					<p>促销价：<span>110元</span></p>
+					</dd>
+				</dl></li>
+			<li><dl>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop1.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -186,13 +194,6 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 				</dl></li>
 			<li><dl>
 					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop3.jpg"></dt>
-					<dd>
-					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
-					<p>促销价：<span>110元</span></p>
-					</dd>
-				</dl></li>
-			<li><dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop4.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -205,7 +206,7 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 		<tr><td colspan="2"><ul class="tejia_shop">
 			<li>
 				<dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop1.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop2.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -213,7 +214,7 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 				</dl>
 			</li>
 			<li><dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop2.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop5.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -227,7 +228,7 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 					</dd>
 				</dl></li>
 			<li><dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop4.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop6.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -238,7 +239,7 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 		<tr><td colspan="2"><ul class="tejia_shop">
 			<li>
 				<dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop1.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop5.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -253,14 +254,14 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 					</dd>
 				</dl></li>
 			<li><dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop3.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop4.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
 					</dd>
 				</dl></li>
 			<li><dl>
-					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop4.jpg"></dt>
+					<dt><img alt="特价1" src="/MyFirstWebSite/fashionShop/images/shop2.jpg"></dt>
 					<dd>
 					<p>天使之城 新款 手工珍珠金线类似衫雪纺衫LM0304 白色</p>
 					<p>促销价：<span>110元</span></p>
@@ -269,9 +270,6 @@ background-image: url("/MyFirstWebSite/fashionShop/images/bg_xinpin.png");
 		</ul></td></tr>
 	</table>
 	</div>
-	
-	
-	
 </div>
 
 <jsp:include page="jsp/Footer.jsp" />

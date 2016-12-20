@@ -1,3 +1,5 @@
+<%@page import="java.util.Set"%>
+<%@page import="org.eclipse.jdt.internal.compiler.ast.ThisReference"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -80,9 +82,17 @@ padding-left: 80px;
 	<p>退货地址：安徽省合肥市庐阳区北一环财富广场首座1112<span>/</span>邮编：230001</p>
 </div>
 <div class="footer_new" >
+<%
+	Set set=(Set)this.getServletContext().getAttribute("online");
+	Set allset=(Set)this.getServletContext().getAttribute("allOnline");
+	int longin=set.size();
+	int	all=allset.size();
+%>
 <table>
-	<tr><td>新商品数量</td><td id="td_new"></td><td>件</td></tr>
-	<tr><td>热卖商品数量</td><td id="td_hot"></td><td>件</td></tr>
+	<tr><td>新商品数量</td><td id="td_new">35</td><td>件</td></tr>
+	<tr><td>热卖商品数量</td><td id="td_hot">50</td><td>件</td></tr>
+	<tr><td>当前在线人数</td><td id="td_online"><%=all  %> </td><td>人</td></tr>
+	<tr><td>登录人数</td><td id="td_online"><%=longin %> </td><td>人</td></tr>
 </table>
 </div>
 </div>

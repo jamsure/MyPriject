@@ -80,7 +80,7 @@ margin-left: 20px;
 					<li><img src="/MyFirstWebSite/fashionShop/images/home1.png" />我的评论<span><img src="/MyFirstWebSite/fashionShop/images/right_1.png" /></span></li>
 					<li><img src="/MyFirstWebSite/fashionShop/images/home1.png" />跟踪包裹<span><img src="/MyFirstWebSite/fashionShop/images/right_1.png" /></span></li>
 					<li><img src="/MyFirstWebSite/fashionShop/images/home1.png" />资金管理<span><img src="/MyFirstWebSite/fashionShop/images/right_1.png" /></span></li>
-					<li class="log_out"><input type="button" name="log_out" value="安全退出"></li>
+					<li class="log_out"><input type="button" name="log_out" value="安全退出" onclick="window.location.href='/MyFirstWebSite/servlet/logout'"></li>
 				</ul>
 			</td>
 			<td>

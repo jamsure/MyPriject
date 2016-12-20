@@ -6,16 +6,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-	function reloadeCode() {
-		var date=new Date().getTime();
-		document.getElementById("imagecode").src = "<%= request.getContextPath() %>/servlet/ImageServlet?id="+date;
+	function reloadCode() {
+		var time=new Date().getTime();
+		document.getElementById("imagecode").src="<%=request.getContextPath() %>/servlet/ImageServlet?d="+time;
 	}
 </script>
 </head>
 <body>
-验证码：<input type="text" name="checkcode">
-<img id="imagecode" alt="验证码" src="<%=request.getContextPath() %>/servlet/ImageServlet">
+<p style="line-height: 30px;height: 30px;">
+验证码：<input type="text" name="checkcode" maxlength="4" style="width: 45px;" style="vertical-align:middle">
+<img id="imagecode" alt="验证码" src="<%=request.getContextPath() %>/servlet/ImageServlet" style="vertical-align:middle">
 <a href="javascript:reloadCode();">看不清楚</a>
-
+</p>
 </body>
 </html>
