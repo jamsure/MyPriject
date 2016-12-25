@@ -57,8 +57,8 @@ public class CheckServlet extends HttpServlet {
 		String username=request.getParameter("username");
 		try {
 			
-			//Class.forName(DBDRIVER);
-			new com.mysql.jdbc.Driver();
+			Class.forName(DBDRIVER);
+			//new com.mysql.jdbc.Driver();
 			conn=DriverManager.getConnection(DBURL,DBUSER,DBPASS);
 			String sql="SELECT COUNT(username) FROM user WHERE username=?";
 			pstmt=conn.prepareStatement(sql);
