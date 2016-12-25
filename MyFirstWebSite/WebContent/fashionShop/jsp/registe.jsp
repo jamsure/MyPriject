@@ -5,6 +5,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>注册/登录</title>
+<script type="text/javascript">
+	var xmlHttp;
+	var flag;
+	function createXMLHttp(){
+		if(window.XMLHttpRequest){
+			xmlHttp=new XMLHttpRequest();
+		}else{
+			xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+	}
+	function checkUserid(username){
+		createXMLHttp();
+		xmlHttp.open("POST","/MyFirstWebSite/servlet/CheckServlet?username="+username);
+		xmlHttp.onreadystatechange=checkUseridCallback;
+		xmlHttp.send(null);
+		document.getElementById("user_name_span").innerHTML="正在验证...";
+	}
+	
+	function checkUseridCallback(){
+		if(xmlHttp.readyState==4){
+			if(xmlHttp.status==200){
+				var text=xmlHttp.responseText;
+				if(text=="true"){
+					flag==false;
+					document.getElementById("user_name_span").innerHTML="用户ID重复，无法使用！";
+				}else{
+					flag=true;
+					document.getElementById("user_name_span").innerHTML="此用户ID可以使用！";
+				}
+			}
+		}
+	}
+	
+	function checkForm(){
+		return flag;
+	}
+	
+</script>
 <style type="text/css">
 
 *{
@@ -108,10 +146,10 @@ width: 360px;
 		</div></td>
 		<td><div class="reg">
 		<p class="user_reg">用户注册：</p>
-		<form action="" method="post" name="reg_form">
+		<form action="" method="post" name="reg_form" onsubmit="return checkForm()">
 		<table>
 			<tr>
-				<td class="left">用户名</td><td class="right"><input type="text" name="user_name"><span id="user_name_span"></span></td>
+				<td class="left">用户名</td><td class="right"><input type="text" name="user_name" onblur="checkUserid(this.value)"><span id="user_name_span"></span></td>
 			</tr>
 			<tr>
 				<td class="left">电子邮件地址</td><td class="right"><input type="text" name="user_emil"><span id="user_emil_span"></span></td>
